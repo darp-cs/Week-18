@@ -27,9 +27,12 @@ render(){
     return(
             <Aux>
                 <Toolbar drawerToggleClicked ={this.sideDrawerToggleHandler}/>
+                
                 <SideDrawer 
                 closed = {this.sideDrawerClosedHandler} 
                 open = {this.state.showSideDrawer}/>
+
+            
                 <main className = {classes.Content}>
                     {this.props.children}
                 </main>
